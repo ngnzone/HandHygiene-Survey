@@ -1,0 +1,7 @@
+{
+  "name": "HandHygiene-Survey",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
