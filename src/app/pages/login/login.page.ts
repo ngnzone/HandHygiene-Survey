@@ -2,7 +2,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators, FormControl } from '@angular/forms';
 import { NavController } from '@ionic/angular';
-import { AuthenticationService } from '../../services/authentication.service';
+import { AuthenticateService }from '../../services/authentication.service';
 
 @Component({
   selector: 'app-login',
@@ -17,7 +17,7 @@ export class LoginPage implements OnInit {
   constructor(
 
     private navCtrl: NavController,
-    private authService: AuthenticationService,
+    private authService: AuthenticateService,
     private formBuilder: FormBuilder
 
   ) { }
@@ -54,7 +54,7 @@ export class LoginPage implements OnInit {
       .then(res => {
         console.log(res);
         this.errorMessage = "";
-        this.navCtrl.navigateForward('/dashboard');
+        this.navCtrl.navigateForward('home');
       }, err => {
         this.errorMessage = err.message;
       })

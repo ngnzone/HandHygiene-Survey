@@ -1,7 +1,7 @@
 // dashboard.page.ts
 import { Component, OnInit } from '@angular/core';
 import { NavController } from '@ionic/angular';
-import { AuthenticationService } from '../../services/authentication.service';
+import { AuthenticateService } from '../../services/authentication.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -14,7 +14,7 @@ export class DashboardPage implements OnInit {
 
   constructor(
     private navCtrl: NavController,
-    private authService: AuthenticationService
+    private authService: AuthenticateService
   ) { }
 
   ngOnInit() {

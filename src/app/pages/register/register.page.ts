@@ -1,7 +1,7 @@
 // register.page.ts
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators, FormControl } from '@angular/forms';
-import { AuthenticationService } from '../../services/authentication.service';
+import { AuthenticateService } from '../../services/authentication.service';
 import { NavController } from '@ionic/angular';
 
 @Component({
@@ -29,7 +29,7 @@ export class RegisterPage implements OnInit {
 
   constructor(
     private navCtrl: NavController,
-    private authService: AuthenticationService,
+    private authService: AuthenticateService,
     private formBuilder: FormBuilder
   ) { }
 
@@ -60,7 +60,7 @@ export class RegisterPage implements OnInit {
   }
 
   goLoginPage() {
-    this.navCtrl.navigateBack('');
+    this.navCtrl.navigateBack('/login');
   }
 
 
