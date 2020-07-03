@@ -1,7 +1,7 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Ionic Blank
+      HandHygiene Survey
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -10,7 +10,7 @@
   <form [formGroup]="qsForm">
     <ion-list>
       <ion-list-header>
-        <ion-label>Single Choice:</ion-label>
+        <ion-label>System Change</ion-label>
       </ion-list-header>
       <div formArrayName="quests">
         <div *ngFor="let qs of qsForm.get('quests')['controls']; let i=index" [formGroupName]="i">

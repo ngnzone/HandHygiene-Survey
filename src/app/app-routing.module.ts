@@ -3,52 +3,33 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  // {
-  //   path: 'home',
-  //   loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
-  // },
+  
+  {  path: '', redirectTo: 'landing',  pathMatch: 'full'   },
+  {  path: 'landing', loadChildren: './pages/landing/landing.module#LandingPageModule'  },
+  {  path: 'login', loadChildren: './pages/login/login.module#LoginPageModule'   },
+  {  path: 'home',  loadChildren: './pages/home/home.module#HomePageModule' },
+ // {  path: 'signup', loadChildren: './pages/signup/signup.module#SignupPageModule'   },
+  {  path: 'details', loadChildren: './pages/details/details.module#DetailsPageModule'  },
+  {  path: 'edit',   loadChildren: './pages/edit/edit.module#EditPageModule'  },
   {
-    // path: '',
-    // redirectTo: 'login',
-    // pathMatch: 'full'
-    
-      path: '',
-      redirectTo: 'landing',
-      pathMatch: 'full'
-    
+    path: 'registration',
+    loadChildren: () => import('./pages/registration/registration.module').then( m => m.RegistrationPageModule)
   },
   {
-    
-     path: 'landing',
-      loadChildren: './pages/landing/landing.module#LandingPageModule'  
+    path: 'verify-email',
+    loadChildren: () => import('./pages/verify-email/verify-email.module').then( m => m.VerifyEmailPageModule)
   },
-
+ // {
+  /*
   {
     path: 'login',
-    loadChildren: () => import('./pages/login/login.module').then(m => m.LoginPageModule)
-  },
-
+    loadChildren: () => import('./pages/login/login.module').then( m => m.LoginPageModule)
+  }, */
   {
-    path: 'home',
-    loadChildren: () => import('./pages/home/home.module').then(m => m.HomePageModule)
+    path: 'forgot-password',
+    loadChildren: () => import('./pages/forgot-password/forgot-password.module').then( m => m.ForgotPasswordPageModule)
   },
-
-  {
-    path: 'register',
-    loadChildren: () => import('./pages/register/register.module').then(m => m.RegisterPageModule)
-  },
-  {
-    path: 'dashboard',
-    loadChildren: () => import('./pages/dashboard/dashboard.module').then(m => m.DashboardPageModule)
-  },
-  {
-    path: 'details',
-    loadChildren: () => import('./pages/details/details.module').then( m => m.DetailsPageModule)
-  },
-  {
-    path: 'edit',
-    loadChildren: () => import('./pages/edit/edit.module').then( m => m.EditPageModule)
-  },
+  // { path: 'category', loadChildren: './category/category.module#CategoryPageModule' },
 ];
 
 @NgModule({

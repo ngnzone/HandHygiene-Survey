@@ -12,33 +12,61 @@ export class HomePage implements OnInit {
   qsForm: FormGroup;
   singleChoice: any[] = [
     {
-      nbr: '1',
-      question: 'What is your job?',
-      choice1: 'Full Stack Developer',
-      choice2: 'Frontend Developer',
-      choice3: 'Backend Developer',
-      choice4: 'Database Administrator',
-      choice: ''
+      nbr: '1.1',
+      question: 'How easily available is alcohol-based handrub in your health-care facility? Please Choose one answer?',
+      choice1: 'Available but efficacy and tolerability have not been proven',
+      choice2: 'Available only in some wards or in discontinuous supply (with efficacy and toleberability proven)',
+      choice3: 'Available facility-wide with continuous supply ( with efficacy and tolerability proven)',
+      choice4: 'Available facility-wide with continuous supply and at the point of care in the majority of wards (with efficacy and tolerability proven)',
+      choice5: 'Available facility-wide with continuous supply at each point of care (with efficacy and telerabilty proven)'
     },
+
     {
-      nbr: '2',
-      question: 'Which frontend framework do you use?',
-      choice1: 'Angular',
-      choice2: 'React',
-      choice3: 'Vue',
-      choice4: 'Ember',
-      choice: ''
+      nbr: '1.2',
+      question: 'What is the sink:bed ratio?',
+      choice1: 'Less than 1:10',
+      choice2: 'At least 1:10 most wards',
+      choice3: 'At least 1:10 facility-wide and 1 to 1 in isolation rooms and in the intensive care units',
     },
+    
     {
-      nbr: '3',
-      question: 'Which backend framework do you use?',
-      choice1: 'Spring',
-      choice2: 'Django',
-      choice3: 'Laravel',
-      choice4: 'Ruby on Rails',
-      choice: ''
-    }
+      nbr: '1.3',
+      question: 'Is there a continuous supply of clean, running water?',
+      choice1: 'NO',
+      choice2: 'YES',
+    },
+
+    {
+      nbr: '1.4',
+      question: 'Is soap available at each sink?',
+      choice1: 'NO',
+      choice2: 'YES',
+    },
+
+    {
+      nbr: '1.5',
+      question: 'Are single-use towels available at each sink?',
+      choice1: 'NO',
+      choice2: 'YES',
+    },
+
+    {
+      nbr: '1.6',
+      question: 'Is there dedicated available budget for the continuous procurement of hand hygiene products eg alcohol based handrubs?',
+      choice1: 'NO',
+      choice2: 'YES',
+    },
+
+    {
+      nbr: '1.7',
+      question: 'Is there dedicated available budget for the continuous procurement of hand hygiene products eg alcohol based handrubs?',
+      choice1: 'NO',
+      choice2: 'YES',
+    },
+
+    
   ];
+
 
   multiChoice: any[] = [
     {

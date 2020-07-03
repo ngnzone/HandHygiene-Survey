@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController, MenuController, NavController } from '@ionic/angular';
+import { Router } from '@angular/router';
+
 // import { RegisterPage } from '../auth/register/register.page';
 // import { LoginPage } from '../auth/login/login.page';
 // import { AuthService } from 'src/app/services/auth.service';
@@ -15,8 +17,11 @@ export class LandingPage implements OnInit {
     private modalController: ModalController,
     private menu: MenuController,
     // private authService: AuthService,
-    private navCtrl: NavController,
-  ) { 
+    private router : Router,
+   
+  ) 
+  
+  { 
     this.menu.enable(false);
   }
 
@@ -32,11 +37,13 @@ export class LandingPage implements OnInit {
     
   }
 
-  async register() {
-    this.navCtrl.navigateForward('/register');
+  async login() {
+    this.router.navigate(['login']);
   }
 
-  async login() {
-    this.navCtrl.navigateForward('/login');
+  async register() {    
+    this.router.navigate(['registration']);
   }
+
+  
 }
