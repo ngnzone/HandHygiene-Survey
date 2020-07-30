@@ -51,7 +51,7 @@ export class QuizService {
   userzArray = [];
   userNamez;
   userSurname;
-  userAge;
+  userInstitution;
   userContact;
   userEmail;
   userPaswword;
@@ -78,7 +78,7 @@ export class QuizService {
     });
   }
 
-  signup(email, password, name, surname, age, contact) {
+  signup(email, password, name, surname, institution, contact) {
     return firebase.auth().createUserWithEmailAndPassword(email, password).then((user) => {
       if (user) {
         // console.log('User Registerded');
@@ -91,7 +91,7 @@ export class QuizService {
         firebase.database().ref('users/' + this.userId).set({
         username: name,
         surnamez: surname,
-        agez: age,
+        institutsion: institution,
         contactz: contact,
         emails: email,
         }, (error) => {
@@ -148,13 +148,13 @@ export class QuizService {
       const userzz = data.val();
       this.userNamez = userzz.username;
       this.userSurname = userzz.surnamez;
-      this.userAge = userzz.agez;
+      this.userInstitution = userzz.institutionz;
       this.userContact = userzz.contactz;
       this.userEmail = userzz.emails;
       this.userzArray.push({
         name: this.userNamez,
         surname: this.userSurname,
-        age: this.userAge,
+        institution: this.userInstitution,
         contact: this.userContact,
         email: this.userEmail
         // userzz
@@ -247,7 +247,7 @@ export class QuizService {
  }
 
  //////////////////////////////////////////////////////////////////////////////////
- // category for results
+ // category for resultsf
  getCatRes(userId) {
    console.log(userId);
    let catRes =  firebase.database().ref().child('Results/' + userId);

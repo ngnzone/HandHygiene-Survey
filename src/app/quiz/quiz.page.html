@@ -1,22 +1,22 @@
 <ion-header>
   <ion-toolbar class="Align" color="primary">
-    <ion-title>Hand Hygiene Quiz</ion-title>
+    <ion-title> Hand Hygiene Survey</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <ion-card>
-    <ion-list *ngFor="let quiz of Questionz" (ionChange)="Score($event, quiz.Question)">
-        <h3><b>{{ quiz.counter }}. {{ quiz.Question }}</b></h3>
+    <ion-list class="quest-padd"   text-wrap *ngFor="let quiz of Questionz" (ionChange)="Score($event, quiz.Question)">
+        <h3  text-wrap ><b>{{ quiz.counter }}. {{ quiz.Question }}</b></h3>
           <ion-radio-group>
-            <ion-item *ngFor="let tcf of quiz.Answer">
-              <ion-label>{{ tcf }}</ion-label>
+            <ion-item   text-wrap  *ngFor="let tcf of quiz.Answer">
+              <ion-label text-wrap class="my-title" >{{ tcf }}</ion-label>
               <ion-radio slot="start" value="{{ tcf }}"></ion-radio>
             </ion-item>
           </ion-radio-group>
       </ion-list>
   </ion-card>
   <ion-card class="Align">
-    <ion-button shape="round" (click)="submit(); presentToast()" [routerLink]="['/results']">Submit</ion-button>
+    <ion-button shape="round" (click)="submit(); presentToast()" [routerLink]="['/category']">Submit</ion-button>
   </ion-card>
 </ion-content>

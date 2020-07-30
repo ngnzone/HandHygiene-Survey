@@ -14,7 +14,9 @@
   <!-- <div *ngFor = "let users of username">
     <p>Sure {{ users.name }}</p>
   </div> -->
+  <div padding text-center>
   <ion-button [routerLink]="['/category']" shape="round">Take survey</ion-button><br>
   <ion-button [routerLink]="['/results']" shape="round">See Results</ion-button><br>
   <ion-button (click)="logout()" shape="round">Log Out</ion-button>
+  </div>
 </ion-content>
