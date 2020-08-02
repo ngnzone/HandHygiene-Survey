@@ -1,14 +1,18 @@
 <ion-header>
   <ion-toolbar class="Align" color="primary">
+    <ion-buttons slot="start"> 
+      <ion-back-button>
+      </ion-back-button>
+     </ion-buttons>
     <ion-title>Category</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content class="Align">
-  <div *ngFor ="let cat of Category">
-       <ion-card [routerLink]="['/quiz']" (click) ="setID(cat)">
+  <div *ngFor="let cat of Category"> 
+       <ion-card [routerLink]="['/quiz']" (click) ="SetID(cat)">
       <ion-card-content>
-          <h3><b><strong>{{ cat.categories }}</strong></b></h3>
+          <h3><b><strong>{{cat.categories}}</strong></b></h3>
       </ion-card-content>
     </ion-card>
   </div>

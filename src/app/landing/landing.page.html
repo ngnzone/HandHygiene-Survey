@@ -1,18 +1,22 @@
 <ion-header>
   <ion-toolbar>
+    <ion-buttons slot="start"> 
+      <ion-back-button>
+      </ion-back-button>
+     </ion-buttons>
     <ion-title class="my-page-title">landing</ion-title> 
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <ion-card class="welcome-card">
-    <ion-img src="assets/images/shapes.svg" ></ion-img>
+    <ion-img src="assets/images/logo.jpg" ></ion-img>
     <ion-card-header>
       <ion-card-subtitle class="my-title">HandHygiene Survey App</ion-card-subtitle>
       <ion-card-title class='my-label'>Welcome to HandHygiene App</ion-card-title>
     </ion-card-header>
     <ion-card-content>
-      <p>Please sign in if you already have an accout or create one by cliking on register.</p>
+      <p> Please click on the "BEGIN" button below to start. On the next page sign in if you already have an account or create one by clicking on register.</p>
     </ion-card-content>
   </ion-card>
 </ion-content>
@@ -21,7 +25,7 @@
   <ion-toolbar>
       <ion-row> 
         <ion-col>
-          <ion-button color="primary" expand="full" color="primary" (click)="login()">Begin!!!</ion-button>
+         <h3> <ion-button color="primary" expand="full" color="primary" (click)="login()">Begin</ion-button></h3>
         </ion-col>
         <!-- <ion-col>
           <ion-button color="primary" expand="full" color="danger" (click)="register()">Register</ion-button>

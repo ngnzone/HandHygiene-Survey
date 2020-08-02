@@ -1,0 +1,581 @@
+{
+  "categories" : {
+    "cat_001" : {
+      "ID" : "cat_001",
+      "catName" : "System Change"
+    },
+
+    "cat_002" : {
+      "ID" : "cat_002",
+      "catName" : "Training and Education"
+    },
+    "cat_003" : {
+      "ID" : "cat_003",
+      "catName" : "Evaluation and Feedback"
+    },
+    "cat_004" : {
+      "ID" : "cat_004",
+      "catName" : "Reminders in the work place"
+    },
+    
+
+    "cat_005" : {
+      "ID" : "cat_005",
+      "catName" : "Institutional Safety Climate for Hand Hygiene"
+    },
+
+    "cat_006" : {
+      "ID" : "cat_006",
+      "catName" : "Leadership Criteria"
+    },
+
+    "cat_007" : {
+      "ID" : "cat_007",
+      "catName" : "Extra Question"
+    }
+  
+  },
+
+
+
+  "survey" : {
+    "cat_001" : {
+      "1 How easily available is alcohol-based handrub in your health-care facility? Please Choose one answer" : {
+        "Available but efficacy and tolerability have not been proven" : 0,
+        "Available facility-wide with continuous supply ( with efficacy and tolerability proven)" : 10,
+        "Available facility-wide with continuous supply and at the point of care in the majority of wards (with efficacy and tolerability proven)" : 30,
+        "Available facility-wide with continuous supply at each point of care (with efficacy and telerabilty proven)" : 50,
+        "Available only in some wards or in discontinuous supply (with efficacy and toleberability proven)" : 5,
+        "Not Available" : 0
+      },
+      "2 What is the sink:bed ratio?" : {
+        "At least 1:10 facility-wide and 1 to 1 in isolation rooms and in the intensive care units" : 10,
+        "At least 1:10 most wards" : 5,
+        "Less than 1:10" : 0
+      },
+      "3 Is there a continuous supply of clean, running water? " : {
+        "No" : 0,
+        "Yes" : 10
+      },
+      "4 Is soap available at each sink?" : {
+        "No" : 0,
+        "Yes" : 10
+      },
+      "5 Are single-use towels available at each sink?" : {
+        "No" : 0,
+        "Yes" : 10
+      },
+      "6 Is there dedicated available budget for the continuous procurement of hand hygiene products eg alcohol based handrubs?" : {
+        "No" : 0,
+        "Yes" : 10
+      }
+     
+    },
+
+    "cat_002" : {
+
+      "1 Regarding training of health-care workers in your facility:": {
+
+      "1a How frequently do health-care workers receive training regarding hand hygiene in your facility?" : {
+        "Never" : 0,
+        "At least once" : 5,
+        "Regular training for medical and nursing staff, or all professional categories (at least annually)" : 10,
+        "Mandatory training for all professional categories at commencement of employment, then ongoing regular training at least annually" : 20
+      },
+
+      "1b Is a process in place to confirm that all health-care workers complete this training?" : {
+        "No" : 0,
+        "Yes" : 20
+      }
+    },
+
+     "2 Are the following WHO documents , or similar local adaptations, easily available to all health-care workers?":
+     { 
+
+     "2a The WHO Guidelines on Hand Hygiene in Health-care: A Summary " : {
+        "No" : 0,
+        "Yes" : 5
+      },
+
+      "2b The WHO Hand Hygiene Technical Reference Manual" : {
+        "No" : 0,
+        "Yes" : 5
+      },
+      "2c The WHO Hand Hygiene: Why, How and When Brochure" : {
+        "No" : 0,
+        "Yes" : 5
+      },
+      "2d The WHO Glove Use Information Leaflet" : {
+        "No" : 0,
+        "Yes" : 5
+      }
+    },
+
+     
+      "3 Is a professional with adequate skills to serve as trainer for hand hygiene educational programmes active within the health-care facility?" : {
+        "No" : 0,
+        "Yes" : 15
+      },
+
+    "4 Is a system in place for training and validation of hand hygiene compliance observers?" : {
+        "No" : 0,
+        "Yes" : 15
+      },
+
+   "5 Is there is a dedicated budget that allows for hand hygiene training?" : {
+        "No" : 0,
+        "Yes" : 10
+      }
+  
+   },
+
+   
+ "cat_003" : {
+      
+     "1 Are regular (at least annual) ward-based audits undertaken to assess the availability of handrub, soap, single use towels and other hand hygiene resources?" : {
+        "No" : 0,
+        "Yes" : 10
+      },
+
+
+     "2 Is health care worker knowledge of the following topics assessed at least annually, example after education sessions?"
+     :{
+     "2a The indications for hand hygiene" : {
+        "No" : 0,
+        "Yes" : 5
+      },
+      
+
+      "2b The correct technique for hand hygiene" : {
+        "No" : 0,
+        "Yes" : 5
+      }
+    },
+
+    "3 Indirect Monitoring of Hand Hygiene Compliance" :{
+
+    "3a Is consumption of alcohol-based handrub monitored regularly at least every 3 months?" : {
+        "No" : 0,
+        "Yes" : 5
+      },
+
+      "3b Is consumption of soap monitored regularly at least every 3 months?" : {
+        "No" : 0,
+        "Yes" : 5
+      },
+
+
+       "3c Is alcohol based handrub consumption at least 20L per 1000 patient-days?" : {
+        "No (or not measured)" : 0,
+        "Yes" : 5
+      }
+    },
+
+
+   " 4 Direct Monitoring of Hand Hygiene Compliance Only complete section 3-4 if hand hygiene compliance observers in your facility have been trained and validated and utilise the WHO My 5 Moments for Hand Hygiene (or similar) methodology"
+     
+      :{
+     "4a How frequently is direct observation of hand hygiene compliance performed using the WHO Hand Hygiene Observation tool or similar technique? Choose one answer" : {
+        "Never" : 0,
+        "Irregularly" : 5,
+       "Annually" : 10,
+       "Every 3 months or more often" : 15
+      },
+
+
+      "4b What is the overall hand hygiene compliance rate according to the WHO Hand Hygiene Observation tool or similar technique in your facility? Choose one answer" : {
+        "≤30%" : 0,
+        "31 - 40%" : 5,
+        "41 - 50%" : 10,
+        "51 - 60%" : 15,
+        "61 - 70%" : 20,
+        "71 - 80%" : 25,
+        "≥81%" : 30
+      }
+    },
+
+
+    "5 Feedback" :{
+    "5a Immediate feedback Is immediate feedback given to health-care workers at the end of each hand hygiene compliance observation session?" : {
+        "No " : 0,
+        "Yes" : 5
+      },
+
+
+     "5bi Health-care workers?" : {
+        "No " : 0,
+        "Yes" : 7.5
+      },
+
+     "5bii Facility leadership?" : {
+        "No " : 0,
+        "Yes" : 7.5
+      }
+
+    }
+ },
+
+ "cat_004" : {
+      
+     "1 Are the following posters (or locally produced equivalent with similar content) displayed?":{
+     "1a Poster explaining the indications for hand hygiene Choose one answer" : {
+        "Not displayed" : 0,
+        "Displayed in some wards or treatment areas" : 15,
+        "Displayed in most wards or treatment areas" : 20,
+        "Displayed in all wards or treatment areas"  :25
+       },
+
+      "1b Poster explaining the correct use of handrub Choose one answer" : { 
+        "Not displayed" : 0,
+        "Displayed in some wards or treatment areas" : 5,
+        "Displayed in most wards or treatment areas" : 10,
+        "Displayed in all wards or treatment areas"  :15
+       },
+
+      "1c Poster explaining correct hand-washing technique Choose one answer" : { 
+        "Not displayed" : 0,
+        "Displayed in some wards or treatment areas" : 5,
+        "Displayed in most wards or treatment areas" : 7.5,
+        "Displayed at every sink in all wards or treatment areas"  :10
+       }
+      },
+
+      "2 How frequently does a systematic audit of all posters for evidence of damage occur, with replacement as required? Choose one answer" : {
+        "Never" : 0,
+        "At least Annually" : 10,
+       "Every 2-3 months" : 15
+      
+      },
+
+
+      "3 Is hand hygiene promotion undertaken by displaying and regularly updating posters other than those mentioned above?" : {
+        "No" : 0,
+        "Yes" : 10
+      },
+
+
+      "4 Are hand hygiene information leaflets available on wards?" : {
+        "No" : 0,
+        "Yes" : 10
+      },
+
+      "5 Are other workplace reminders located throughout the facility? example hand hygiene campaign screensavers, badges, stickers, etc" : {
+        "No" : 0,
+        "Yes" : 15
+      }
+},
+
+
+"cat_005" : {
+
+
+ "1 With regard to a hand hygiene team 10 that is dedicated to the promotion and implementation of optimal hand hygiene practice in your facility:"
+    :{ 
+     "1a Is such a team established?" : {
+        "No" : 0,
+        "Yes" : 5
+      },
+
+     
+     "1b Does this team meet on a regular basis at least monthly?" : {
+        "No" : 0,
+        "Yes" : 5
+      },
+
+     "1c Does this team have dedicated time to conduct active hand hygiene promotion? teaching monitoring hand hygiene performance, organizing new activities" : {
+        "No" : 0,
+        "Yes" : 5
+      }
+    },
+
+   "2 Have the following members of the facility leadership made a clear commitment to support hand hygiene improvement? example a written or verbal commitment to hand hygiene promotion received by the majority of health-care workers"
+     :{
+     "2a Chief executive officer" : {
+        "No" : 0,
+        "Yes" : 10
+      },
+    
+     "2b Medical director" : {
+        "No" : 0,
+        "Yes" : 5
+      },
+     
+     "2c Director of nursing" : {
+        "No" : 0,
+        "Yes" : 5
+     }
+  },
+
+    "3 Has a clear plan for the promotion of hand hygiene throughout the entire facility for the 5 May Save Lives Clean Your Hands Annual Initiative been established ?"
+    : {
+        "No" : 0,
+        "Yes" : 10
+      },
+
+  "4 Are systems for identification of Hand Hygiene Leaders from all disciplines in place?" :{
+   
+  "4a A system for designation of Hand Hygiene champions 11"
+
+   : {
+        "No" : 0,
+        "Yes" : 5
+      },
+
+ "4b A system for recognition and utilisation of Hand Hygiene role models 12"
+
+   : {
+        "No" : 0,
+        "Yes" : 5
+
+    }
+  },
+
+
+  "5 Regarding patient involvement in hand hygiene promotion:" :{
+  "5a Are patients informed about the importance of hand hygiene? example with a leaflet":
+
+    {
+        "No" : 0,
+        "Yes" : 5
+      },
+
+  "5b Has a formalised programme of patient engagement been undertaken?":
+
+    {
+        "No" : 0,
+        "Yes" : 10
+    }
+  },
+
+  "6 Are initiatives to support local continuous improvement being applied in your facility, for example:"
+  :{
+   "6a Hand hygiene E-learning tools":
+
+    {
+        "No" : 0,
+        "Yes" : 5
+      },
+
+
+
+  "6b A hand hygiene institutional target to be achieved is established each year":
+
+    {
+        "No" : 0,
+        "Yes" : 5
+      },
+
+   "6c A system for intra-institutional sharing of reliable and tested local innovations":
+
+    {
+        "No" : 0,
+        "Yes" : 5
+      },
+
+  "6d Communications that regularly mention hand hygiene example facility newsletter,  clinical meetings":
+
+    {
+        "No" : 0,
+        "Yes" : 5
+      },
+   "6e  System for personal accountability 13":
+
+    {
+        "No" : 0,
+        "Yes" : 5
+      },
+
+   "6f A Buddy system for new employees":
+
+    {
+        "No" : 0,
+        "Yes" : 5
+      }
+    }
+  
+},
+
+
+
+"cat_006" : {
+     
+ " 1 System Change" :
+ {
+ "1a Has a cost-benefit analysis of infrastructure changes required for the performance of optimal hand hygiene at the point of care been performed?":
+
+    {
+        "No" : 0,
+        "Yes" : 1
+      },
+
+ 
+ "1b Has a cost-benefit analysis of infrastructure changes required for the performance of optimal hand hygiene at the point of care been performed?":
+
+    {
+        "No" : 0,
+        "Yes" : 1
+    }
+      },
+
+ "2 Training and Education": {
+
+    "1a Has the hand hygiene team undertaken training of representatives from other facilities in the area of hand hygiene promotion?":
+
+    {
+        "No" : 0,
+        "Yes" : 1
+      },
+
+
+  "1b Have hand hygiene principles been incorporated into local medical and nursing educational curricula?":
+
+    {
+        "No" : 0,
+        "Yes" : 1
+
+    }
+      },
+
+  "3 Evaluation and Feedback" : {
+
+   "1a  Are specific healthcare associated infections HCAIs monitored? example Staphylococcus aureus bacteremia, Gram negative bacteremia, device-related infections":
+
+    {
+        "No" : 0,
+        "Yes" : 1
+      },
+
+
+  "1b Is a system in place for monitoring of HCAI in high risk-settings? example intensive care and neonatal units":
+
+    {
+        "No" : 0,
+        "Yes" : 1
+      },
+
+
+ "1c Is a facility-wide prevalence survey of HCAI performed at least annually?":
+
+    {
+        "No" : 0,
+        "Yes" : 1
+      },
+
+
+  "1d Are HCAI rates presented to facility leadership and to health-care workers in conjunction with hand hygiene compliance rates?":
+
+    {
+        "No" : 0,
+        "Yes" : 1
+      },
+
+
+"1e Is structured evaluation undertaken to understand the obstacles to optimal hand hygiene compliance and the causes of HCAI at the local level, and results reported to the facility leadership?":
+
+    {
+        "No" : 0,
+        "Yes" : 1
+    }
+},
+  
+  
+  "4 Reminders in the Workplace" : {
+ "1a Is a system in place for creation of new posters designed by local health-care workers?":
+
+    {
+        "No" : 0,
+        "Yes" : 1
+      },
+
+ "1b Are posters created in your facility used in other facilities?":
+
+    {
+        "No" : 0,
+        "Yes" : 1
+      },
+
+ "1c Have innovative types of hand hygiene reminders been developed and tested at the facility?":
+
+    {
+        "No" : 0,
+        "Yes" : 1
+    } 
+  },
+
+"5 Institutional Safety Climate" :{
+
+"1a Has a local hand hygiene research agenda addressing issues identified by the WHO Guidelines as requiring further investigation been developed?":
+
+    {
+        "No" : 0,
+        "Yes" : 1
+      },
+
+"1b Has your facility participated actively in publications or conference presentations oral or poster in the area of hand hygiene?":
+
+    {
+        "No" : 0,
+        "Yes" : 1
+      },
+
+"1c Are patients invited to remind health-care workers to perform hand hygiene?":
+
+    {
+        "No" : 0,
+        "Yes" : 1
+      },
+
+"1d Are patients and visitors educated to correctly perform hand hygiene?":
+
+    {
+        "No" : 0,
+        "Yes" : 1
+      },
+
+"1e Does your facility contribute to and support the national hand hygiene campaign if existing?":
+
+    {
+        "No" : 0,
+        "Yes" : 1
+      },
+
+"1f Is impact evaluation of the hand hygiene campaign incorporated into forward planning of the infection control programme?":
+
+    {
+        "No" : 0,
+        "Yes" : 1
+      },
+
+"1g Does your facility set an annual target for improvement of hand hygiene compliance facility-wide?":
+
+    {
+        "No" : 0,
+        "Yes" : 1
+      },
+
+"1h If the facility has such a target, was it achieved last year?":
+
+    {
+        "No" : 0,
+        "Yes" : 1
+      }
+    }
+   },
+
+
+
+ "cat_007" : {
+
+ 	"7 Extra question Action plan Answer this question ONLY if you scored less than 100 for questions 1 to 6 Is there a realistic plan in place to improve the infrastructure in your health care facility?" : {
+        "No" : 0,
+        "Yes" : 5
+      }
+  }
+}
+
+
+
+
+  
+}
+

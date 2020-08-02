@@ -133,7 +133,7 @@ export class QuizPage implements OnInit {
     // console.log(this.gameArray);
     // console.log(this.index);
 
-    // getting user infor
+    // ting user infor
     if (this.user != null) {
       this.uid = this.user.uid;
       console.log(this.uid);
