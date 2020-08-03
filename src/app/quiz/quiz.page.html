@@ -7,7 +7,7 @@
 <ion-content>
   <ion-card>
     <ion-list class="quest-padd"   text-wrap *ngFor="let quiz of Questionz" (ionChange)="Score($event, quiz.Question)">
-        <h3  text-wrap ><b>{{ quiz.counter }}. {{ quiz.Question }}</b></h3>
+        <h6  text-wrap ><b>{{ quiz.counter }}. {{ quiz.Question }}</b></h6>
           <ion-radio-group>
             <ion-item   text-wrap  *ngFor="let tcf of quiz.Answer">
               <ion-label text-wrap class="my-title" >{{ tcf }}</ion-label>
@@ -16,7 +16,7 @@
           </ion-radio-group>
       </ion-list>
   </ion-card>
-  <div *ngFor="let cat of Category | slice:1:2">  
+  <div *ngFor="let cat of Category | slice:1:2">  <!-- slice used to load questions only from category one-->
   <ion-card text-center>
     <ion-button shape="round" (click)="submit();  presentToast(); setID(cat)" [routerLink]="['/quizcat2']">Submit</ion-button>
   </ion-card>

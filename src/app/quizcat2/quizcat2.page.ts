@@ -166,7 +166,7 @@ export class Quizcat2Page implements OnInit {
 
   async presentToast() {
     const toast = await this.toastController.create({
-      message: 'Done with this section, Please take the next category.',
+      message: 'Please take the next set of questions on this page.',
       duration: 8000,
       position: 'bottom',
       color: 'primary'
@@ -181,7 +181,7 @@ export class Quizcat2Page implements OnInit {
   async loadData() {
     const loader = await this.loadingController.create({
       spinner: 'bubbles',
-      message: 'loading categories...'
+      message: 'loading questions...'
     });
     await loader.present();
     this.quizService.getcat().then( getcat => {

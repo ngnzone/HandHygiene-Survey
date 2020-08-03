@@ -164,7 +164,7 @@ export class QuizPage implements OnInit {
 
   async presentToast() {
     const toast = await this.toastController.create({
-      message: 'Done with this section, Please take the next category.',
+      message: ' Please take the next set of questions on this page.',
       duration: 8000,
       position: 'bottom',
       color: 'primary'

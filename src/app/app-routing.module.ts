@@ -16,7 +16,6 @@ const routes: Routes = [
   { path: 'quizcat3', loadChildren: './quizcat3/quizcat3.module#Quizcat3PageModule' },
   { path: 'quizcat4', loadChildren: './quizcat4/quizcat4.module#Quizcat4PageModule' },
   { path: 'quizcat5', loadChildren: './quizcat5/quizcat5.module#Quizcat5PageModule' },
-  { path: 'quizcat6', loadChildren: './quizcat6/quizcat6.module#Quizcat6PageModule' },
   { path: 'extraquiz', loadChildren: './extraquiz/extraquiz.module#ExtraquizPageModule' },
 ];
 
