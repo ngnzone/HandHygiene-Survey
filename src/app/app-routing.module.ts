@@ -12,6 +12,12 @@ const routes: Routes = [
   { path: 'profile', loadChildren: './profile/profile.module#ProfilePageModule' },
   { path: 'report', loadChildren: './report/report.module#ReportPageModule' },
   { path: 'landing', loadChildren: './landing/landing.module#LandingPageModule' },
+  { path: 'quizcat2', loadChildren: './quizcat2/quizcat2.module#Quizcat2PageModule' },
+  { path: 'quizcat3', loadChildren: './quizcat3/quizcat3.module#Quizcat3PageModule' },
+  { path: 'quizcat4', loadChildren: './quizcat4/quizcat4.module#Quizcat4PageModule' },
+  { path: 'quizcat5', loadChildren: './quizcat5/quizcat5.module#Quizcat5PageModule' },
+  { path: 'quizcat6', loadChildren: './quizcat6/quizcat6.module#Quizcat6PageModule' },
+  { path: 'extraquiz', loadChildren: './extraquiz/extraquiz.module#ExtraquizPageModule' },
 ];
 
 @NgModule({

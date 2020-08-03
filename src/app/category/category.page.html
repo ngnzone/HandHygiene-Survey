@@ -4,15 +4,24 @@
       <ion-back-button>
       </ion-back-button>
      </ion-buttons>
-    <ion-title>Category</ion-title>
+   <ion-title>Start Survey</ion-title> 
   </ion-toolbar>
 </ion-header>
 
 <ion-content class="Align">
-  <div *ngFor="let cat of Category"> 
-       <ion-card [routerLink]="['/quiz']" (click) ="SetID(cat)">
+  <p>
+   
+    This is the first sectioin of the hand hygiene survey.
+    After you finish this first section, you would be presented with the section section where you would press a button to continue on theis second section.
+
+
+  </p>
+  <!-- <div *ngFor ="let cat of Category;  let i = index">     -->
+  <div *ngFor="let cat of Category | slice:0:1">  
+      
+     <ion-card   [routerLink]="['/quiz']" (click) ="setID(cat)">
       <ion-card-content>
-          <h3><b><strong>{{cat.categories}}</strong></b></h3>
+          <h3 ><b><strong> START SURVEY</strong></b></h3>
       </ion-card-content>
     </ion-card>
   </div>
