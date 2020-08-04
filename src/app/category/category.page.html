@@ -19,7 +19,7 @@
   </ion-card>
   <!-- <div *ngFor ="let cat of Category;  let i = index">     -->
   <div *ngFor="let cat of Category | slice:0:1">  <!-- use to direct to the first category -->
-      
+      <p> {{cat}}</p>
      <ion-card   [routerLink]="['/quiz']" (click) ="setID(cat)">
       <ion-card-content>
           <h3 ><b><strong> START SURVEY</strong></b></h3>

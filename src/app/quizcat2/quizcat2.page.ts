@@ -85,6 +85,7 @@ export class Quizcat2Page implements OnInit {
               // console.log(this.Questionz[i].Answer[n]);
               // this.answerValue = this.Questionz[i].Answer[n];
               this.answerValue += this.Questionz[i].value[n];
+              console.log(this.answerValue);
              // console.log(this.answerValue + "" + "Test VALUE OF ANSWERVALUE");
           
 
