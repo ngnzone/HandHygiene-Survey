@@ -17,7 +17,7 @@
       </ion-list>
   </ion-card>
   <div *ngFor="let cat of Category | slice:1:2">  <!-- slice used to load questions only from category one-->
-   <p> {{cat}}</p>
+
     <ion-card text-center>
     <ion-button shape="round" (click)="submit();  presentToast(); setID(cat)" [routerLink]="['/quizcat2']">Submit</ion-button>
   </ion-card>

@@ -8,7 +8,7 @@ const routes: Routes = [
   { path: 'signup', loadChildren: './signup/signup.module#SignupPageModule' },
   { path: 'category', loadChildren: './category/category.module#CategoryPageModule' },
   { path: 'quiz', loadChildren: './quiz/quiz.module#QuizPageModule' },
-  // { path: 'landing', loadChildren: './landing/landing.module#LandingPageModule' },
+  // { path: 'results', loadChildren: './results/results.module#ResultsPageModule' },
   { path: 'profile', loadChildren: './profile/profile.module#ProfilePageModule' },
   { path: 'report', loadChildren: './report/report.module#ReportPageModule' },
   { path: 'landing', loadChildren: './landing/landing.module#LandingPageModule' },

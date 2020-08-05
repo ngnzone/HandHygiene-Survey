@@ -21,7 +21,7 @@
   </ion-card>
   <div *ngFor="let cat of Category | slice:5:6">  <!-- Slice :2:3 used to load just questions in category 3-->
   <ion-card text-center>
-    <ion-button shape="round" (click)="submit();  presentToast(); setID(cat)" [routerLink]="['/']">Submit</ion-button>
+    <ion-button shape="round" (click)="submit();  presentToast(); setID(cat)" [routerLink]="['/reports']">Submit</ion-button>
   </ion-card>
   </div>
 </ion-content>

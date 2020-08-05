@@ -247,22 +247,24 @@ export class QuizService {
  }
 
  //////////////////////////////////////////////////////////////////////////////////
- // category for resultsf
- getCatRes(userId) {
-   console.log(userId);
-   let catRes =  firebase.database().ref().child('Results/' + userId);
-   catRes.on('child_added', snapshot => {
-      this.catID = snapshot.key;
-      console.log(this.catID);
-      this.categoryArrayRes.push({
-        key: this.catID
-      });
-      });
-   console.log(this.categoryArrayRes);
-   return this.categoryArrayRes;
- }
+ // ****Reports *** ///
 
- //  getCatRes() {
+ //Get score
+ getCatRes(userId) {
+  console.log(userId);
+  let catRes =  firebase.database().ref().child('Scores/' + userId);
+  catRes.on('child_added', snapshot => {
+     this.catID = snapshot.key;
+    //  console.log(this.catID);
+     this.categoryArrayRes.push({
+       key: this.catID
+     });
+     });
+  // console.log(this.categoryArrayRes);
+  return this.categoryArrayRes;
+}
+
+//  getCatRes() {
 //   let catID;
 //   return firebase.database().ref('Results' + this.userId).then((snapshot) => {
 //     catID = snapshot.Key;
@@ -271,23 +273,26 @@ export class QuizService {
 // }
 
 
- // get results from firebase
- getResults(userId) {
-  this.Counter = 0;
-  let resultsquestion;
-  let gameID;
-  let values;
-  this.clearArray(this.myResults);
- // tslint:disable-next-line: align
- return firebase.database().ref().child('Results/' + userId +  name).once('value').then( (snapshot) => {
-      const values = snapshot.val();
-      console.log(values);
+// get results from firebase
+getResults(userId) {
+ this.Counter = 0;
+ let resultsquestion;
+ let gameID;
+ let values;
+ this.clearArray(this.myResults);
+// tslint:disable-next-line: align
+return firebase.database().ref().child('Scores/' + userId ).once('value').then( (snapshot) => {
+     const values = snapshot.val();
+    //  console.log(values);
 
-      return snapshot.val();
+     return values;
 
-    });
-  // return this.myResults;
-  // console.log(this.myResults);
- }
+   });
+ // return this.myResults;
+ // console.log(this.myResults);
+
 
 }
+}
+
+

@@ -1,9 +1,32 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>report</ion-title>
+  <ion-toolbar class="Align" color="primary">
+    <ion-buttons slot="start"> 
+      <ion-back-button>
+      </ion-back-button>
+     </ion-buttons>
+   <ion-title>Survey Report</ion-title> 
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <ion-card  text-center [routerLink]="['/quiz']" (click) ="setID(cat)">
+    <ion-card-content>
+        <h3 ><b><strong> Congratulations</strong></b></h3>
+        <strong> You have successfully completed the Hand Hygiene survey. Your results below show the state at which your health facility is classified according WHO hand hygiene standards
 
+        </strong>
+          
+       
+        <ion-card text-center>
+          <ion-card-content>
+          <h3><strong> {{ status}} </strong></h3>
+          </ion-card-content>
+          </ion-card>
+        <ion-card text-center>
+          <ion-card-content>
+             <h3><strong> With total score of:  {{ totalScore}} </strong></h3>
+          </ion-card-content>
+          </ion-card>
+    </ion-card-content>
+  </ion-card>
 </ion-content>

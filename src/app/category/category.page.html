@@ -11,16 +11,17 @@
 <ion-content class="Align">
   <ion-card>
     <ion-card-content>
-   
-    This is the first sectioin of the hand hygiene survey.
-    After you finish this first section, you would be presented with the section section where you would press a button to continue on theis second section.
-
+   <strong>
+    Welcome to the first sectioin of the hand hygiene survey.
+    After you finish this first section, please press the submit button to continue to the second section of the survey.
+    At the end of the survey, you would be presented with a congratulation message and your survey results.
+   </strong>
   </ion-card-content>
   </ion-card>
   <!-- <div *ngFor ="let cat of Category;  let i = index">     -->
   <div *ngFor="let cat of Category | slice:0:1">  <!-- use to direct to the first category -->
-      <p> {{cat}}</p>
-     <ion-card   [routerLink]="['/quiz']" (click) ="setID(cat)">
+      
+     <ion-card  text-center [routerLink]="['/quiz']" (click) ="setID(cat)">
       <ion-card-content>
           <h3 ><b><strong> START SURVEY</strong></b></h3>
       </ion-card-content>
