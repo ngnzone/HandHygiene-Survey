@@ -179,7 +179,7 @@ export class QuizPage implements OnInit {
   async loadData() {
     const loader = await this.loadingController.create({
       spinner: 'bubbles',
-      message: 'loading categories...'
+      message: 'loading survey...'
     });
     await loader.present();
     this.quizService.getcat().then( getcat => {

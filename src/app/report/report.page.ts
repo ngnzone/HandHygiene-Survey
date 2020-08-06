@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import * as firebase from 'firebase';
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-report',
   templateUrl: './report.page.html',
@@ -94,4 +95,7 @@ export class ReportPage implements OnInit {
   
     ngOnInit() {
     }
+
+
+    
   }

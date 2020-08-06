@@ -13,20 +13,28 @@
     <ion-card-content>
         <h3 ><b><strong> Congratulations</strong></b></h3>
         <strong> You have successfully completed the Hand Hygiene survey. Your results below show the state at which your health facility is classified according WHO hand hygiene standards
-
         </strong>
-          
-       
+        
+             
         <ion-card text-center>
           <ion-card-content>
-          <h3><strong> {{ status}} </strong></h3>
+          <h1><strong> {{ status}} </strong></h1>
           </ion-card-content>
           </ion-card>
         <ion-card text-center>
           <ion-card-content>
-             <h3><strong> With total score of:  {{ totalScore}} </strong></h3>
+             <h1><strong> With total score of:  {{ totalScore}} </strong></h1>
           </ion-card-content>
           </ion-card>
     </ion-card-content>
+
+     <ion-card text-center>
+          <ion-card-content>
+            <strong> You can follow the link below to read more about my 5 moments of hand hygiene. Thanks
+            </strong>
+            <!-- <button ion-button (click)="openWithInAppBrowser('https://www.who.int/gpsc/5may/background/5moments/en/')">Open with In App browser</button> -->
+            <ion-button  onClick="cordova.inAppBrowser.open('https://www.who.int/gpsc/5may/background/5moments/en/', '_blank', 'location=yes');returnfalse;"> My 5 moments </ion-button>
+          </ion-card-content>
+          </ion-card>
   </ion-card>
 </ion-content>

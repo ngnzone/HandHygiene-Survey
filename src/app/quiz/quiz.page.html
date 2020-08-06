@@ -1,6 +1,6 @@
 <ion-header>
   <ion-toolbar class="Align" color="primary">
-    <ion-title> Hand Hygiene Survey</ion-title>
+    <ion-title> System Change</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -19,7 +19,7 @@
   <div *ngFor="let cat of Category | slice:1:2">  <!-- slice used to load questions only from category one-->
 
     <ion-card text-center>
-    <ion-button shape="round" (click)="submit();  presentToast(); setID(cat)" [routerLink]="['/quizcat2']">Submit</ion-button>
+    <ion-button shape="round" (click)="submit(); setID(cat)" [routerLink]="['/quizcat2']">Submit</ion-button>
   </ion-card>
   </div>
 </ion-content>

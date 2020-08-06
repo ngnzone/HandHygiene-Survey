@@ -7,26 +7,41 @@
    <ion-title>Start Survey</ion-title> 
   </ion-toolbar>
 </ion-header>
-
 <ion-content class="Align">
+
+  
+  <div *ngFor="let cat of Category | slice:0:1">  <!-- use to direct to the first category -->
+    
+    <ion-card  text-center [routerLink]="['/quiz']" (click) ="setID(cat)">
+     <ion-card-content>
+       <ion-button>
+         <h3 ><b><strong> START SURVEY</strong></b></h3>
+         </ion-button>
+     </ion-card-content>
+   </ion-card>
+ </div>
+
+
   <ion-card>
     <ion-card-content>
    <strong>
-    Welcome to the first sectioin of the hand hygiene survey.
-    After you finish this first section, please press the submit button to continue to the second section of the survey.
+    Welcome to the first section of the hand hygiene survey. Click on START SURVEY button above to take survey.
+    After you finish this section, please press the submit button to continue to the next section.
     At the end of the survey, you would be presented with a congratulation message and your survey results.
    </strong>
   </ion-card-content>
   </ion-card>
-  <!-- <div *ngFor ="let cat of Category;  let i = index">     -->
-  <div *ngFor="let cat of Category | slice:0:1">  <!-- use to direct to the first category -->
-      
-     <ion-card  text-center [routerLink]="['/quiz']" (click) ="setID(cat)">
-      <ion-card-content>
-          <h3 ><b><strong> START SURVEY</strong></b></h3>
-      </ion-card-content>
+  
+<ion-card>
+  <ion-card-content text-center>
+     <strong>
+      It might take a little longer for the questions to load if your internet speed is slow, but please be patient, it would eventually load.
+
+     </strong>
+    </ion-card-content>
     </ion-card>
-  </div>
+
+ 
 </ion-content>
 
 <!-- <ion-content  padding text-center>

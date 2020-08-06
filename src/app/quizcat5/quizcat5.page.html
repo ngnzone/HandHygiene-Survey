@@ -8,7 +8,7 @@
 </ion-header>
 
 <ion-content>
-  <ion-card>
+  <ion-card text-center>
     <ion-list class="quest-padd"   text-wrap *ngFor="let quiz of Questionz" (ionChange)="Score($event, quiz.Question)">
         <h6  text-wrap ><b>{{ quiz.counter }}. {{ quiz.Question }}</b></h6>
           <ion-radio-group>
@@ -19,9 +19,23 @@
           </ion-radio-group>
       </ion-list>
   </ion-card>
+
+  
+    
+    <p>{{scoreBoolean}}</p>
+    
+    <div *ngIf="scoreBoolean == true">
+    <div  *ngFor="let cat of Category | slice:5:7">  <!-- Slice :2:3 used to load just questions in category 3-->
+        <ion-card text-center>
+          <ion-button shape="round" (click)="submit();   setID(cat)" [routerLink]="['/extraquiz']">Submit</ion-button>
+        </ion-card>
+        </div>
+    </div>
+    
+    
   <div *ngFor="let cat of Category | slice:4:5">  <!-- Slice :2:3 used to load just questions in category 3-->
   <ion-card text-center>
-    <ion-button shape="round" (click)="submit();  presentToast(); setID(cat)" [routerLink]="['/quizcat6']">Submit</ion-button>
+    <ion-button shape="round" (click)="submit();   setID(cat)" [routerLink]="['/report']">Submit</ion-button>
   </ion-card>
   </div>
 </ion-content>

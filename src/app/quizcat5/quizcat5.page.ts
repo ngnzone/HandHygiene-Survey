@@ -22,12 +22,14 @@ export class Quizcat5Page implements OnInit {
     Questionz = [];
     Userids;
     ID;
-  
+    userId;
     questionSet = [];
     Answerz = [];
     gameArray = [];
     index = 0;
     answerValue= 0;
+    cat1_score;
+    scoreBolean;
     
    
     // getting user details
@@ -45,7 +47,37 @@ export class Quizcat5Page implements OnInit {
         this.ID = this.quizService.Return_ID();
         this.Questionz = this.quizService.firebaseQuiz(this.ID);
         this.Userids = this.quizService.UserInfor();
+
+
+
+        this.quizService.getResults(this.userId).then(data => {
+          
+                 
+          for (let key in data) {
+             
+             for (let key2 in data[key]){
+              // console.log(data[key][key2]);
+             
+               //  console.log(this.totalScore);
+  
+              if(key=="cat_001"){
+                 this.cat1_score = data[key][key2];
+                 
+              }
+  
+            }
+          } 
+  
+          if (this.cat1_score < 100){
+  
+             this.scoreBolean = true; 
+          }
+          console.log(this.scoreBolean);
+                 
+        });
+    
        }
+      
   
        ngOnInit() {
         this.loadData();
@@ -93,48 +125,7 @@ export class Quizcat5Page implements OnInit {
         }
       }
   
-      //console.log(this.answerValue);
-      // if (this.answerValue === Answer) {
-      //   this.scoreBoolean = true;
-      //   console.log(this.scoreBoolean);
-      //   console.log("correct answer");
-      // }
-      // if (this.answerValue !== Answer) {
-      //   this.scoreBoolean = false;
-      //   console.log("wrong answer");
-      // }
-  
-      // 1st phase
-      // if (this.gameArray.length === 0) {
-      //   this.pushToGameArray(Question, Answer);
-      //   // console.log('pushed to array successfully');
-      // } else if (this.gameArray.length > 0) {
-      //   // console.log('Entered into else clause');
-      //   for (let i = 0; i < this.gameArray.length; i++) {
-      //     // console.log('Entered into for loop');
-      //     if (this.gameArray[i].gameQuestions === question) {
-      //       console.log('Question has a match in game array');
-      //       this.index = this.gameArray.indexOf(this.gameArray[i]);
-      //       // console.log(this.index);
-      //     } else {
-      //       // console.log('no match in game array');
-      //       this.index = null;
-      //     }
-      //   }
-  
-      //   if (this.index != null) {
-      //     console.log(this.index);
-      //     this.gameArray[this.index].Answer = Answer;
-      //     //this.gameArray[this.index].scoreBoolean = this.scoreBoolean;
-      //     console.log(Answer);
-      //   } else if (this.index === null) {
-      //     this.pushToGameArray(Question, Answer);
-      //   }
-      // }
-      // console.log(this.gameArray);
-      // console.log(this.index);
-  
-      // ting user infor
+
       if (this.user != null) {
         this.uid = this.user.uid;
         console.log(this.uid);
@@ -147,16 +138,7 @@ export class Quizcat5Page implements OnInit {
     }
   
     submitFirebase() {
-      // console.log(this.gameArray);
-      // let newPostKey = firebase.database().ref().child('Results/' + this.uid + '/').push().key;
-      // console.log(newPostKey);
-      // for (let i = 0; i < this.gameArray.length; i++) {
-      //   firebase.database().ref('Results/' + '/' + this.uid + '/' + this.ID + '/' + newPostKey + '/' + this.gameArray[i].gameQuestions).set({
-      //     userAnswer: this.gameArray[i].correctAnswer,
-      //     userBooleanScore: this.gameArray[i].scoreBoolean
-      //   });
-      //   console.log(this.Userids);
-      // }
+     
       firebase.database().ref().child('Scores/' + this.uid + '/' + '/' + this.ID + '/' ).update({
         usersScore: this.answerValue
         });
@@ -189,6 +171,14 @@ export class Quizcat5Page implements OnInit {
       });
      
     }
+
+    // this.userId = this.quizService.UserInfor();
+      // this.resultsCat =  this.quizService.getCatRes(this.userId);
+      // console.log(this.userId);
+      // console.log(this.resultsCat);
+  
+      // this.clearArray(this.results);
+      
      
    
     
